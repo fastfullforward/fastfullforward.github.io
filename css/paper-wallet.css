@@ -16,6 +16,7 @@ body {
 	overflow-x:hidden;
 	 width: 100%;
 }
+
 .container {
 	width: 90%;
 	max-width: 1200px;
@@ -24,15 +25,15 @@ body {
 h1 {
 	font-family: 'Gilroy', sans-serif;
 	font-size: 65px;
-	font-weight: 700; 
-	color: #FAB915;
+	font-weight: 700;
+	color: whitesmoke;
 	margin: 0;
 }
 
 h2 {
 	font-family: 'Gilroy', sans-serif;
 	font-size: 36px;
-	font-weight: 700; 
+	font-weight: 700;
 	color: #444;
 	margin: 0;
 	margin-bottom: 28px;
@@ -54,15 +55,15 @@ h2:after {
 h3 {
 	font-family: 'Gilroy', sans-serif;
 	font-size: 22px;
-	font-weight: 600; 
-	color:#FAB915;
+	font-weight: 600;
+	color: #f5c610;
 	margin: 0;
 }
 
 p {
 	font-family: 'Gilroy', sans-serif;
 	font-size: 17px;
-	font-weight: 400; 
+	font-weight: 400;
 	color: #444;
 	margin: 0;
 	line-height: 1.7em;
@@ -87,20 +88,35 @@ p {
 
 a, a:hover, a:visited {
   cursor: pointer;
-  color: #FAB915;
+  color: #f5c610;
 }
 
 .section-1 {
-	background-color: #111724;
+	background-color: #11144c;
 	background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
+    height: 350px;
     display: flex;
 	flex-direction: column;
 	justify-content: center;
 	background-attachment: fixed;
 	background-position: center;
 }
+.section-5 {
+	background-color: #11144c;
+	background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-attachment: fixed;
+	background-position: center;
+}
+.section-5 h1 {
+	margin-bottom: 25px;
+}
+
 
 .section-1 h1 {
 	margin-bottom: 25px;
@@ -115,8 +131,8 @@ a, a:hover, a:visited {
 
 .btn-primary{
   font-family: 'Gilroy', sans-serif;
-	font-weight: 700; 
-	color: whitesmoke!important;
+	font-weight: 700;
+	color: whitesmoke !important;
 	text-shadow: none!important;
 	-webkit-text-shadow: none!important;
 	padding-left: 28px!important;
@@ -124,7 +140,7 @@ a, a:hover, a:visited {
 	font-size: 18px;
 	text-align: center;
 	border-radius: 3px !important;
-	background: #FAB915;
+	background: #f5c610;
   transition: all 300ms ease-in-out 0s;
 	height: 50px;
 	min-width: 140px;
@@ -134,14 +150,12 @@ a, a:hover, a:visited {
 	border: none;
 }
 
-.btn-primary:hover {  
-  background:tomato;
-  transition: background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+.btn-primary:hover {
+  background: #caa20b;
 }
 .btn-primary:active {
-  background: #FAB915;
+  background:#caa20b;
 }
-
 
 .section-2 {
 	padding: 50px 0 50px 0;
@@ -168,19 +182,19 @@ svg.page-hero-shape {
 
 .section-3 {
 	padding: 50px 0 50px 0;
-	background-color: #f9f9f9;
+	background-color: #f4f1eff5;
 }
 
 .section-security {
 	padding: 50px 0 50px 0;
-	background-color: #000;
-	border-top: 15px solid #FAB915;
-	border-bottom: 15px solid #FAB915;
-	background-color: #111724;
+	background-color: #11144c;;
+	border-top: 15px solid #f5c610;
+	border-bottom: 15px solid #f5c610;
+	/*background-color: #2f2fa2;*/
 }
 
 .section-security h2, .section-security p  {
-	color: #fff;
+	color: whitesmoke;
 }
 
 .security-img-ctn {
@@ -196,7 +210,7 @@ svg.page-hero-shape {
 }
 
 .security-recs {
-	color: #FAB915;
+	color: #f5c610;
 	font-size: 18px;
 	font-weight: 600;
 	margin-left: 30px;
@@ -222,7 +236,7 @@ svg.page-hero-shape {
 
 .section-4 {
 	padding: 50px 0 50px 0;
-	
+
 }
 
 .steps {
@@ -231,7 +245,7 @@ svg.page-hero-shape {
 	font-size: 40px;
 	padding: 0;
 	vertical-align: middle;
-	border-right: 1px solid #FAB915;
+	border-right: 1px solid #f5c610;
 	color: #444;
 	margin-top: 15px;
 }
@@ -265,7 +279,7 @@ svg.page-hero-shape {
 }
 
 .panel-default>.panel-heading {
-	background-color: #fff;
+	background-color: whitesmoke;
 }
 
 .panel-title {
@@ -287,7 +301,7 @@ body #universal-footer {
     display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: #FAB915;
+	background-color: #0fcb97;
 	background:url(
 
 data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAYAAACXU8ZrAAAAN0lEQVQYV2O8OJXjv6YKLwMucP3OZwbGXztF/4MY2BTCxMGKQKagK0TmwxUhK0TXgKIIm4kgMQAvbiWPqdTsyAAAAABJRU5ErkJggg==
@@ -298,8 +312,8 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAYAAACXU8ZrAAAAN0lEQVQYV2
 	background-color: #f80824;
 	font-family: 'Gilroy', sans-serif;
 	font-size: 10px;
-	font-weight: 700; 
-	color: #fff;
+	font-weight: 700;
+	color: whitesmoke;
 	margin: 0;
 	display: inline-block;
 	padding: 8px 15px;
@@ -317,7 +331,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAYAAACXU8ZrAAAAN0lEQVQYV2
 .featured-section h5 {
 	font-family: 'Gilroy', sans-serif;
 	font-size: 36px;
-	font-weight: 700; 
+	font-weight: 700;
 	color: #444;
 	margin: 0;
 	margin-bottom: 20px;
@@ -391,7 +405,7 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAYAAACXU8ZrAAAAN0lEQVQYV2
 	margin-top: 30px;
 	width: 30px;
 	font-size: 30px;
-	
+
 }
 
 .steps-p {
@@ -422,9 +436,3 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAFCAYAAACXU8ZrAAAAN0lEQVQYV2
 }
 
 }
-
-
-
-
-
-
