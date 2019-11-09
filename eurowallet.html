@@ -45,9 +45,9 @@
 	GitHub Repository: https://github.com/pointbiz/bitaddress.org
 	-->
 
-    <title>Eurocoin (EURO) Paper Wallet</title>
+    <title>Eurocoin Paper Wallet</title>
 
-    <link rel="icon" type="image/png" href="img/fav.png">
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <!-- Open Graph tags for Facebook Shares -->
     <meta property="og:title" content="Eurocoin Paper Wallet"/>
     <meta property="og:description" content="Create a Eurocoin paper wallet for offline storage and payments"/>
@@ -56,6 +56,10 @@
     <meta name="keywords" content="eurocoin, paper wallet, eurocoin paper wallet"/>
 
     <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="css/paper-wallet.css?version-1.3" rel="stylesheet" media="screen">
+    <link href="css/fonts.css?version-1.0" rel="stylesheet" media="screen">
 
     <script type="text/javascript">
         /*!
@@ -6665,19 +6669,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         }
 
         #paperHeader {
-            background-color: #111724;
+            background-color: #0d20fe;
             background-size: cover;
         }
 
-        header h1 {
-            text-align: center;
-            font-size: 2.5em;
-            color: #FAB915;
-            line-height: 3.0em;
-            margin: 0;
-            -webkit-margin-before: 0;
-            -webkit-margin-after: 0;
-        }
+        /*header h1 {*/
+        /*    text-align: center;*/
+        /*    font-size: 2.5em;*/
+        /*    color: #fff;*/
+        /*    line-height: 3.0em;*/
+        /*    margin: 0;*/
+        /*    -webkit-margin-before: 0;*/
+        /*    -webkit-margin-after: 0;*/
+        /*}*/
 
         header h1 span {
             display: inline-block;
@@ -6687,7 +6691,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         header h1 svg {
             width: 1.5em;
             height: 1.5em;
-            fill: #FAB915;
+            fill: #0d20fe;
             vertical-align: middle;
             position: relative;
             top: -0.125em;
@@ -6833,20 +6837,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         #progress-bar-border {
             margin: 15px 0px;
             border-radius: 5px;
-            background-color: #111724;
+            background-color: #eeeeee;
         }
 
         #progress-bar {
             font-size: 20px;
             width: 0%;
-            background-color: #FAB915;
-            color: #111724;
+            background-color: #11144c;
+            color: yellow;
             padding: 3px;
             border-radius: 5px;
         }
 
         #wallets {
             clear: both;
+            border-radius: 5px;
+            overflow: hidden;
         }
 
         #btcaddress, #btcprivwif, #detailaddress, #detailaddresscomp, #detailprivwif, #detailprivwifcomp {
@@ -6881,7 +6887,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             text-align: left;
             position: relative;
             padding: 15px;
-            background-color: #eeeeee;
+            background-color: #cccccc;
             border-radius: 5px;
             clear: both;
         }
@@ -7020,7 +7026,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         }
 
         #paperarea .artwallet .papersvg {
-            width: 781px;
+            width:780px;
             border: 0;
             margin: 0;
             padding: 12px;
@@ -7029,7 +7035,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
         #paperarea .artwallet .qrcode_public {
             top: 100px;
-            left: 668px;
+            left: 666px;
             z-index: 100;
             margin: 0;
             float: none;
@@ -7040,8 +7046,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         }
 
         #paperarea .artwallet .qrcode_private {
-            top: 95px;
-            left: 17px;
+            top: 94px;
+            left: 14px;
             z-index: 100;
             margin: 0;
             float: none;
@@ -7763,7 +7769,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             }
 
             .paper .commands {
-                border: 2px solid #0d20fe;
+                border: 2px solid #a18000;
             }
 
             #bulkstartindex, #paperlimit, #paperlimitperpage {
@@ -7777,9 +7783,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             .footer {
                 font-size: 90%;
                 clear: both;
-                width: 770px;
+                width: 785px;
                 padding: 10px 0 10px 0;
                 margin: 12px auto auto auto;
+            }
+
+            .footer a {
+                color: #a18000;
             }
 
             .footer div span.item {
@@ -7825,7 +7835,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             .footer .tooltip {
                 display: none;
                 text-align: left;
-                border: 2px solid green;
+                border: 2px solid #a18000;
                 background-color: #FFFFF6;
                 margin: 5px;
                 padding: 10px;
@@ -7839,7 +7849,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             }
 
             .footer .statuswarn {
-                color: orange;
+                color: #a18000;
                 font-weight: bold;
             }
 
@@ -7851,12 +7861,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             .footer .statusicon {
                 background-color: none;
                 font-size: 120%;
+                color:#a18000;
                 padding: 1px 2px;
             }
 
             .footer .statusicon:hover {
-                background-color: #0d20fe;
+                background-color: #f5c610;
                 cursor: pointer;
+                color:white;
             }
         }
 
@@ -8008,7 +8020,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         }
 
         #paperkeyarea {
-            border: 2px solid #0d20fe;
+            border: 2px solid #a18000;
             border-top: none;
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
@@ -8021,38 +8033,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <body onclick="SecureRandom.seedTime();" onmousemove="ninja.seeder.seed(event);">
 
 <header id="paperHeader">
-    <h1>
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-             x="0px" y="0px" width="58.2387695px" height="70.4990234px" viewBox="0 0 58.2387695 70.4990234"
-             enable-background="new 0 0 58.2387695 70.4990234" xml:space="preserve">
-		<path d="M57.7895508,18.8398438L39.3989258,0.4487305C39.1098633,0.1616211,38.7202148,0,38.3139648,0H4.597168
-			C2.0620117,0,0,2.0629883,0,4.5976563v61.3027344c0,2.5361328,2.0620117,4.5986328,4.597168,4.5986328h49.0429688
-			c2.5351563,0,4.5986328-2.0625,4.5986328-4.5986328V19.9238281C58.2387695,19.5180664,58.0766602,19.1279297,57.7895508,18.8398438
-			 M39.847168,5.2329102L53.0053711,18.390625H39.847168V5.2329102z M53.6401367,67.4335938H4.597168
-			c-0.8447266,0-1.5317383-0.6875-1.5317383-1.5332031V4.5976563c0-0.8447266,0.6870117-1.5327148,1.5317383-1.5327148h32.1845703
-			v16.8588867c0,0.8461914,0.6865234,1.5322266,1.5322266,1.5322266h16.859375v44.4443359
-			C55.1733398,66.7460938,54.4848633,67.4335938,53.6401367,67.4335938"></path>
-            <path d="M10.7280273,26.0541992h18.390625c0.8461914,0,1.5332031-0.6860352,1.5332031-1.5332031
-			c0-0.8457031-0.6870117-1.5317383-1.5332031-1.5317383h-18.390625c-0.8461914,0-1.5332031,0.6860352-1.5332031,1.5317383
-			C9.1948242,25.3681641,9.8818359,26.0541992,10.7280273,26.0541992"></path>
-            <path d="M47.5102539,32.1845703H10.7280273c-0.8461914,0-1.5332031,0.6860352-1.5332031,1.5327148
-			c0,0.8461914,0.6870117,1.5322266,1.5332031,1.5322266h36.7822266c0.8457031,0,1.5332031-0.6860352,1.5332031-1.5322266
-			C49.043457,32.8706055,48.355957,32.1845703,47.5102539,32.1845703"></path>
-            <path d="M47.5102539,41.3798828H10.7280273c-0.8461914,0-1.5332031,0.6855469-1.5332031,1.5332031
-			c0,0.8457031,0.6870117,1.53125,1.5332031,1.53125h36.7822266c0.8457031,0,1.5332031-0.6855469,1.5332031-1.53125
-			C49.043457,42.0654297,48.355957,41.3798828,47.5102539,41.3798828"></path>
-            <path d="M47.5102539,50.5751953H10.7280273c-0.8461914,0-1.5332031,0.6865234-1.5332031,1.5332031
-			c0,0.8457031,0.6870117,1.5322266,1.5332031,1.5322266h36.7822266c0.8457031,0,1.5332031-0.6865234,1.5332031-1.5322266
-			C49.043457,51.2617188,48.355957,50.5751953,47.5102539,50.5751953"></path>
-		</svg>
-        <span>Eurocoin (EURO) Paper Wallet</span>
-    </h1>
+    <div class="section-1 section-1-mbl">
+        <div class="row">
+            <div class="col-md-12" style="text-align:center;">
+                <h3 class="h3-line" style="color:#f5c610">A fun and secure way to store your Eurocoins offline</h3>
+                <h1>Eurocoin Paper Wallet</h1>
+                <div style="height:60px">
+                    <br>
+                    <div id="user-alert">
+                        <h3>Move your mouse to generate an Eurocoin address</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
+<br>
+<br>
 <div id="busyblock"></div>
 <div id="main">
-    <div id="user-alert">
-        <h2>Move your mouse to generate an Eurocoin (EURO) address</h2>
-    </div>
     <div id="seedpoolarea"><textarea rows="16" cols="62" id="seedpool"></textarea></div>
     <div id="testnet"></div>
     <ul class="menu" id="menu" style="display:none;">
@@ -8069,7 +8068,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     </ul>
 
     <div id="generate">
-        <span id="generatelabelbitcoinaddress">Generating Eurocoin (EURO) Address...</span><br/><br/>
+        <span id="generatelabelbitcoinaddress">Generating Eurocoin Address...</span><br/><br/>
         <span id="generatelabelmovemouse">Move your mouse around to add some extra randomness... </span><span
             style="display:none;" id="mousemovelimit"></span><br/><br/>
         <span id="generatelabelkeypress">No mouse? Type some random characters into this textbox</span>: <input
@@ -8088,7 +8087,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 <div id="keyarea" class="keyarea">
                     <div class="public">
                         <div class="pubaddress">
-                            <span class="label" id="singlelabelbitcoinaddress">Eurocoin (EURO) Address</span>
+                            <span class="label" id="singlelabelbitcoinaddress">Eurocoin Address</span>
                         </div>
                         <div id="qrcode_public" class="qrcode_public"></div>
                         <div class="pubaddress">
@@ -8119,8 +8118,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 </div>
 
                 <div id="singlesafety">
-                    <p id="singletip1"><b>A Eurocoin (EURO) wallet</b> is as simple as a single pairing of a Eurocoin
-                        (EURO) address with its corresponding Eurocoin (EURO) private key. Such a wallet has been
+                    <p id="singletip1"><b>A Eurocoin wallet</b> is as simple as a single pairing of a Eurocoin
+                        (EURO) address with its corresponding Eurocoin private key. Such a wallet has been
                         generated for you in your web browser and is displayed above.</p>
                     <p id="singletip2"><b>To safeguard this wallet</b> you must print or otherwise record the Eurocoin
                         (EURO) address and private key. It is important to make a backup copy of the private key and
@@ -8130,17 +8129,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                         SHA256 hash available in the signed version history document linked on the footer of this site.
                         If you leave/refresh the site or press the "Generate New Address" button then a new private key
                         will be generated and the previously displayed private key will not be retrievable. Your
-                        Eurocoin (EURO) private key should be kept a secret. Whomever you share the private key with has
-                        access to spend all the Eurocoin (EURO) associated with that address. If you print your wallet
+                        Eurocoin private key should be kept a secret. Whomever you share the private key with has
+                        access to spend all the Eurocoin associated with that address. If you print your wallet
                         then store it in a zip lock bag to keep it safe from water. Treat a paper wallet like cash.</p>
-                    <p id="singletip3"><b>Add funds</b> to this wallet by instructing others to send Eurocoin (EURO) to
-                        your Eurocoin (EURO) address.</p>
+                    <p id="singletip3"><b>Add funds</b> to this wallet by instructing others to send Eurocoin to
+                        your Eurocoin address.</p>
                     <p id="singletip4"><b>Check your balance</b> by going to some block explorer and entering your
-                        Eurocoin (EURO) address.</p>
-                    <p id="singletip5"><b>Spend your Eurocoin (EURO)</b> by downloading an Eurocoin wallet and sweeping
+                        Eurocoin address.</p>
+                    <p id="singletip5"><b>Spend your Eurocoin</b> by downloading an Eurocoin wallet and sweeping
                         the full balance of your private key into your account. When you perform a transaction your
-                        change will be sent to another Eurocoin (EURO) address within the p2p client wallet. You must
-                        then backup the p2p client wallet and keep it safe as your remaining Eurocoin (EURO) will be
+                        change will be sent to another Eurocoin address within the p2p client wallet. You must
+                        then backup the p2p client wallet and keep it safe as your remaining Eurocoin will be
                         stored there. Satoshi advised that one should never delete a wallet.</p>
                 </div>
             </div>
@@ -8156,9 +8155,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 -ms-transition: height 0.5s ease-in-out;
                 -o-transition: height 0.5s ease-in-out;
                 transition: height 0.5s ease-in-out;
-                border-left: 2px solid #111724;
-                border-right: 2px solid #111724;
-                border-bottom: 2px solid #111724;
+                border-left: 2px solid #f5c610;
+                border-right: 2px solid #f5c610;
+                border-bottom: 2px solid #f5c610;
             }
 
             .style-example img {
@@ -8202,13 +8201,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
             .style-col:hover {
                 opacity: 1;
-                background-image: radial-gradient(grey, FAB915);
-                color: #FAB915;
+
+                color: #000;
             }
 
             .selected-design {
                 opacity: 1;
-                background-image: radial-gradient(grey, #FAB915);
+                background-color: #f1c109;
+
             }
 
             .confirm-design {
@@ -8236,13 +8236,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             }
 
             .confirm-design-white {
-                border: 3px solid #fff;
+                border: 3px solid #000;
             }
 
             .confirm-design:hover {
                 background-color: #fff;
-                color: #121216;
-                border: 3px solid #FAB915;
+                color: #f5c610;
+                border: 3px solid #caa20b;
                 background-image: url(img/arrow-in-circle-black.png);
                 cursor: pointer;
             }
@@ -8252,7 +8252,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             }
 
             .step-header {
-                background-color: #FAB915;
+                background-color: #eebe02;
                 color: white;
                 font-weight: 700;
                 padding: 12px;
@@ -8266,7 +8266,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
             #bikeshedDos {
                 display: none;
-                background-color: #FAB915;
+                background-color: #efbe01;
                 color: white;
                 font-weight: 700;
                 padding: 12px;
@@ -8279,14 +8279,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             }
 
             #bikeshedDos:hover {
-                background-color: #111724;
+                background-color: #d4a900;
                 color: #fff;
                 background-image: url(img/arrow-in-circle-white.png);
                 cursor: pointer;
             }
 
             #stepThreePrint {
-                background-color: #FAB915;
+                background-color: #eebe02;
                 color: white;
                 font-weight: 700;
                 padding: 12px;
@@ -8299,14 +8299,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             }
 
             #stepThreePrint:hover {
-                background-color: #111724;
+                background-color: #d4a900;
                 color: #fff;
                 background-image: url(img/arrow-in-circle-white.png);
                 cursor: pointer;
             }
 
             .print-btn {
-                background: #3d3d3d;
+                background: #2f2fa2;
                 color: #fff;
                 padding: 5px 10px;
                 border-radius: 3px;
@@ -8314,8 +8314,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             }
 
             .print-btn:hover {
-                background: #fff;
-                color: #3d3d3d;
+                background: #3838d2;
+                color: #fff;
             }
 
         </style>
@@ -8402,10 +8402,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
                     </div>
                     <div class="style-example">
-                        <svg xmlns="" viewBox="0 0 512 512">
-                            <path d="M430.9 393.4l-119.6-119-58.1-57.9-13.4-13.3c15.9-40.6 7.1-88.2-26.6-121.7-35.4-35.3-88.5-42.3-131-22.9l76.1 75.8-53.1 52.9-77.9-75.8C6.2 153.8 15 206.7 50.4 242c33.6 33.5 81.4 42.3 122.1 26.5l14.4 14.3L81.7 388c-7.6 5.7-7.6 19 1.9 26.6l43.8 43.7c7.6 7.6 19.1 7.6 26.7 0l96.1-112.4 113.4 112.9c7.1 7.1 17.7 7.1 24.8 0l40.7-40.6c8.9-7.1 8.9-19.5 1.8-24.8z"/>
-                            <path d="M494.4 216.6l-34.5-34.1c-2.2-2.2-5.8-2.2-8 0l-3.7 3.7-18.5-15.8s1.2-10-4.9-18.7c-6.2-8.7-16.1-19.8-23.2-26.9-7.1-7-34.1-33.9-69.7-51.4C296.2 55.7 271 48 241 48v29.7s28.7 16.6 45.1 29.7c16.3 13.1 16.8 59.5 16.8 59.5l-28.5 28.5 56.5 56.1 31-36.3c12.9-3.5 23.8-3.8 30.2-.3l13.7 13.3-9.6 9.5c-2.2 2.2-2.2 5.7 0 7.9l34.5 34.1c2.2 2.2 5.8 2.2 8 0l55.7-55.2c2.1-2.2 2.1-5.8 0-7.9z"/>
-                        </svg>
+                      <img src="img/design/background-6.png">
+                  </div>
                     </div>
                 </div>
             </div>
@@ -8417,7 +8415,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             </div>
             <div class="commands">
 
-                <div id="papercommands" class="row">
+                <div id="papercommands" class="row" style="margin-top:-11px" align:"center">
                     <div class="papersettings">
                         <span style="display:none;"><label id="paperlabelhideart"
                                                            for="paperart">Hide Art?</label> <input type="checkbox"
@@ -8592,8 +8590,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             </div>
             <div id="paperkeyarea"></div>
             <div id="singlesafety">
-                <p id="singletip1"><b>A Eurocoin (EURO) wallet</b> is as simple as a single pairing of a Eurocoin (EURO)
-                    address with its corresponding Eurocoin (EURO) private key. Such a wallet has been generated for you
+                <p id="singletip1"><b>A Eurocoin wallet</b> is as simple as a single pairing of a Eurocoin
+                    address with its corresponding Eurocoin private key. Such a wallet has been generated for you
                     in your web browser and is displayed above.</p>
                 <p id="singletip2"><b>To safeguard this wallet</b> you must print or otherwise record the Eurocoin
                     (EURO) address and private key. It is important to make a backup copy of the private key and store
@@ -8602,18 +8600,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                     from the author of this site by matching the SHA256 hash of this HTML with the SHA256 hash available
                     in the signed version history document linked on the footer of this site. If you leave/refresh the
                     site or press the "Generate New Address" button then a new private key will be generated and the
-                    previously displayed private key will not be retrievable. Your Eurocoin (EURO) private key should be
-                    kept a secret. Whomever you share the private key with has access to spend all the Eurocoin (EURO)
+                    previously displayed private key will not be retrievable. Your Eurocoin private key should be
+                    kept a secret. Whomever you share the private key with has access to spend all the Eurocoin
                     associated with that address. If you print your wallet then store it in a zip lock bag to keep it
                     safe from water. Treat a paper wallet like cash.</p>
-                <p id="singletip3"><b>Add funds</b> to this wallet by instructing others to send Eurocoin (EURO) to your
-                    Eurocoin (EURO) address.</p>
+                <p id="singletip3"><b>Add funds</b> to this wallet by instructing others to send Eurocoin to your
+                    Eurocoin address.</p>
                 <p id="singletip4"><b>Check your balance</b> by going to a block explorer and entering your Eurocoin
                     (EURO) address.</p>
-                <p id="singletip5"><b>Spend your Eurocoin (EURO)</b> by downloading a Eurocoin wallet and sweeping the
+                <p id="singletip5"><b>Spend your Eurocoin</b> by downloading a Eurocoin wallet and sweeping the
                     full balance of your private key into your account. When you perform a transaction your change will
-                    be sent to another Eurocoin (EURO) address within the p2p client wallet. You must then backup the
-                    p2p client wallet and keep it safe as your remaining Eurocoin (EURO) will be stored there. Satoshi
+                    be sent to another Eurocoin address within the p2p client wallet. You must then backup the
+                    p2p client wallet and keep it safe as your remaining Eurocoin will be stored there. Satoshi
                     advised that one should never delete a wallet.</p>
             </div>
         </div>
@@ -9575,7 +9573,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             document.getElementById("paperarea").style.display = "none";
 
             document.getElementById("menu").style.display = "block";
-            document.getElementById("user-alert").innerHTML = "<h2>Wallet Generated</h2>"
+            document.getElementById("user-alert").innerHTML = "<h3>Wallet Generated</h3>"
             // Hide Progress Bar
             document.getElementById('progress-bar-border').style.display = 'none';
             //Show Print Button
@@ -12030,7 +12028,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             var denomMenuBCH = denomMenu.options[denomMenu.selectedIndex].value;
             // Default colors
             var addressColor = '#000000;'
-            var lockArtColor = '#000000;'
+            var secretColor = '#ffffff;'
+            var lockArtColor = '#ffffff;'
             var lockArtBgColor = '#fffff;'
             // Display Bip38 Encrypted msg, hidden by default
             var encryptedDisplay = 'none;'
@@ -12140,7 +12139,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
                 "<svg height='42' width='392' style='fill:" + addressColor + "' class='btcaddress'><text x='375' y='38' text-anchor='end' font-size='16px' id='btcaddress" + i + "' fill='" + addressColor + "'></text></svg>" +
 
                 //"<div class='" + keyelement + "' id='" + keyelement + i + "'></div>" +
-                "<svg height='42' width='392' style='fill:" + addressColor + "' class='" + keyelement + "'><text id='" + keyelement + i + "' x='0' y='15' font-size='10px' fill='" + addressColor + "'></text></svg>" +
+                "<svg height='42' width='392' style='fill:" + secretColor + "' class='" + keyelement + "'><text id='" + keyelement + i + "' x='15' y='15' font-size='10px' fill='" + secretColor + "'></text></svg>" +
 
                 "<div class='lock-ctn'>" +
                 "<div class='lock-art'>" +
